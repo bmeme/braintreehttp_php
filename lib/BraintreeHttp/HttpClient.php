@@ -193,7 +193,7 @@ class HttpClient
                 return NULL;
             }
 
-            list($k, $v) = explode(":", $header);
+            list($k, $v) = explode(":", $header, 2);
             $key = trim($k);
             $value = trim($v);
         }
